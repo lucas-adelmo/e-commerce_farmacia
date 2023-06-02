@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary: rgb(19, 37, 69);
+}
+
+header{
+    background-color: var(--primary);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-h{
+    list-style: none;
+    color: white;
+    display: inline-flex;
+}
+
+.menu-h li{
+    padding: 10px;
+}
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.produto{
+    display: block;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px rgb(19, 37, 69, 0.25);
+}
+
+
+.heart-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+
+
+.descricao-med{
+    display: grid;
+    color: var(--primary);
+    
+}
+
+.descricao-med p{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+}
+
+.button span{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    right: 8px;
+
+}
+
+
+
+
