@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DEVinPharma</title>
+        <link rel="icon" type="image/x-icon" href="./assets/icons/icon-dark.ico">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header>
+            <img src="./assets/img/logo.png" alt="logo DEVinPharma" width="300" height="77.31">
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul class="my-account">
+                <li><img src="./assets/icons/person-fill.svg" alt="my account"></li>
+                <li><img src="./assets/icons/basket-fill.svg" alt="shopping"></li>
+            </ul>
+        </header>
+        <nav >
+            <ul class="menu-h">
+                <li><a href="./index.html">TODOS MEDICAMENTOS</a></li>
+                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="./contato.html">FALE CONOSCO</a></li>                
+            </ul>            
+        </nav>
+
+        <section class="section">
+
+            <div class="contact-pharm">
+                <div class="contact-pharm-head">
+                    <h2>Você precisa de ajuda? Vamos conversar.</h2>
+                    <p>Preencha o formulário ao lado e nosso time retornará em 24 horas.</p>
+                </div>
+                <ul class="find-us">
+                    <li class="find-us-tel"><img src="./assets/icons/tel.svg"><p>+55 48 99115 8805</p></li>
+                    <li><img src="./assets/icons/email.svg"><p>devinpharma@gmail.com</p></li>
+                    <li><img src="./assets/icons/geo.svg"><p>Rodovia SC 401, nº 3730 - Saco Grande
+                        CEP 88032-005 - Florianópolis/SC</p></li>
+                </ul>
+                <div class="social-media">
+                    <img src="./assets/icons/insta.svg">
+                    <img src="./assets/icons/twitter.svg">
+                </div>
+            </div>
+
+            
+            <div class="forms">
+                <h2 class="forms-head">Contate-nos</h2>
+                <form class="forms-input">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" id="tel">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email">
+                    </div>                
+                    <div>
+                        <label for="selection">Assunto:</label>
+                        <select>
+                            <option selected disabled value="">Selecione</option>
+                            <option value="duvidas">Dúvidas</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="revenda">Revenda</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea rows="4" cols="50"> </textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="orcamento">
+                        <label for="orcamento">Essa mensagem é sobre um orçamento</label>
+                    </div>
+                    <div class="forms-button">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </body>
+</html>
