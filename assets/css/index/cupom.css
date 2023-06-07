@@ -1,0 +1,19 @@
+section.container-fluid{
+    background-color: #006aff; 
+    color: white; 
+    padding: 0 !important;
+}
+
+.row a{   
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: white !important;
+    justify-content: center; 
+    align-items: center !important;;
+    height: 40px;   
+}
+
+section.container-fluid a:hover{
+    background-color: #41608F;    
+}
