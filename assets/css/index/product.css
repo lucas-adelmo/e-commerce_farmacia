@@ -1,13 +1,22 @@
+section h4{
+    color:rgb(19, 37, 69) ;
+}
+
 .card{
-    width: 220px !important;
+    justify-content: center !important;
     box-shadow: 0px 0px 24px rgb(19, 37, 69, 0.25);
     padding: 8px;
+    margin: 20px;
 }
 
 .card-title{
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5px;
+}
+
+.card-product{
+    margin: 0 auto;
 }
 
 .card-body{
@@ -19,7 +28,7 @@
 .card-body p{
     display: flex;
     margin: 10px !important;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .button{
