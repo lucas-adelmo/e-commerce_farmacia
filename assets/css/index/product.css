@@ -1,0 +1,54 @@
+section h4{
+    color:rgb(19, 37, 69) ;
+}
+
+.card{
+    justify-content: center !important;
+    box-shadow: 0px 0px 24px rgb(19, 37, 69, 0.25);
+    padding: 8px;
+    margin: 20px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.card-product{
+    margin: 0 auto;
+}
+
+.card-body{
+    display: grid;
+    color: var(--primary);
+    padding: 5px !important;
+}
+
+.card-body p{
+    display: flex;
+    margin: 10px !important;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;    
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    margin: 10px 0;
+}
+
+.button span{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    right: 8px;
+
+}

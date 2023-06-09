@@ -1,0 +1,14 @@
+.nav {
+    background-color: #D2E4F5;
+}
+
+.nav-link {
+    color: rgb(19, 37, 69) !important;
+}
+
+.nav a:hover {
+    background-color:#41608F;
+    color: white !important;
+    width: 100%;
+    height: 100%;
+}
