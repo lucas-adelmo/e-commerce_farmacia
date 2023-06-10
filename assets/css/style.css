@@ -12,5 +12,19 @@
 :root {
     --primary: rgb(19, 37, 69);
 }
-
-
+.hideMobile {
+    display: none;
+}
+@media (max-width: 576px) {
+    .hideMobile {
+        display: block;
+        width: 100%;
+    }
+    .hideDesktop {
+        display: none;
+    }
+    .carousel, .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
