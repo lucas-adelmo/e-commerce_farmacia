@@ -7,6 +7,9 @@
         
         <title>DEVinPharma</title>
         
+        <script src="./assets/js/header-navigation.js"></script>
+        <script src="./assets/js/products-bestSellers.js"></script>
+        <script src="./assets/js/products-priceDown.js"></script>
         <link rel="icon" type="image/x-icon" href="./assets/icons/icon-dark.ico">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,16 +17,16 @@
     </head>
     
     <body>
-
+        
         <section class="container-fluid">
             <div class="row text-center g-0">
                 <a href="">Ganhe R$ 20 OFF* com o cupom TURMACLAMED</a>
             </div>
         </section>
-
-        <header class="container-fluid px-5">
+        
+        <header class="container-fluid px-5" id="header">
             <div class="row">
-                <span class="col-xl-4"><img src="./assets/img/logo.png" alt="logo DEVinPharma" width="300" height="77.31"></span>
+                <span class="col-xl-4" id="header-logo"></span>
                 <span class="col-xl-4">
                     <div class="input-group my-3">
                         <input type="search" id="form1" class="form-control-sm" placeholder="Search"/>
@@ -41,17 +44,7 @@
             </div>
         </header>
 
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link todos-medicamentos" aria-current="page" href="./index.html">TODOS MEDICAMENTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sobre-nos" href="">SOBRE NÓS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contato.html">FALE CONOSCO</a>
-            </li>
-        </ul>
+        <ul class="nav justify-content-center" id="menuElement"></ul>
 
         <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -82,11 +75,11 @@
             </button>
         </div>
 
-        <section class="container-xl my-5">
+        <section class="container-xl my-5" id="baixou-preco">
             <h4>Baixou o preço</h4>
-            <div class="row g-0">
-                <span class="col-lg-3">
-                    <div class="card">
+            <div class="row g-0" >
+                <!-- <span class="col-lg-3">
+                    <div class="card" id="card-product-1">
                         <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                         <img class="card-product" src="./assets/img/generico.png" alt="medicamento-generico" height="224">
                         <div class="card-body">
@@ -101,7 +94,7 @@
                     </div> 
                 </span>
                 <span class="col-lg-3">
-                    <div class="card">
+                    <div class="card" id="card-product-2">
                         <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                         <img class="card-product" src="./assets/img/generico.png" alt="medicamento-generico" height="224">
                         <div class="card-body">
@@ -116,7 +109,7 @@
                     </div> 
                 </span>
                 <span class="col-lg-3">
-                    <div class="card">
+                    <div class="card" id="card-product-3">
                         <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                         <img class="card-product" src="./assets/img/generico.png" alt="medicamento-generico" height="224">
                         <div class="card-body">
@@ -131,7 +124,7 @@
                     </div> 
                 </span>
                 <span class="col-lg-3">
-                    <div class="card">
+                    <div class="card" id="card-product-4">
                         <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                         <img class="card-product" src="./assets/img/generico.png" alt="medicamento-generico" height="224">
                         <div class="card-body">
@@ -144,14 +137,14 @@
                             </button>
                         </div>
                     </div> 
-                </span>
+                </span> -->
             </div>
         </section>
 
-        <section class="container-xl my-5">
+        <section class="container-xl my-5" id="mais-vendidos">
             <h4>Mais vendidos</h4>
             <div class="row g-0">
-                <span class="col-lg-3">
+                <!-- <span class="col-lg-3">
                     <div class="card">
                         <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                         <img class="card-product" src="./assets/img/generico.png" alt="medicamento-generico" height="224">
@@ -206,7 +199,7 @@
                             </button>
                         </div>
                     </div> 
-                </span>
+                </span> -->
             </div>
         </section>
 
