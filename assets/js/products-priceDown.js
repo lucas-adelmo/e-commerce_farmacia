@@ -29,6 +29,7 @@ const productsPriceDown = [
     }
 ];
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
     function createPriceDown (product, index) {
@@ -36,16 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = 'col-lg-3';
     
         card.innerHTML = `
-            <div class="card" id="card-product-${index + 1}">
+            <div class="card" id="card-priceDown-${index + 1}">
                 <div class="card-title"><img src="./assets/icons/heart.svg"></div>
                 <img class="card-product" src="${product.imagePath}" alt="medicamento-generico" height="224">
                 <div class="card-body">
-                    <p>${product.title}</p>
+                    <p id="title">${product.title}</p>
                     <p>De &nbsp;<del>${product.originalPrice}</del></p>
-                    <p>Por ${product.discountedPrice}</p>
+                    <p id="price">Por ${product.discountedPrice}</p>
                     <button class="button" type="button">
                         <img src="./assets/icons/add-icon.svg">                   
-                        <span>Adicionar</span>
+                        <span onclick="addProduct(document.getElementById('card-priceDown-${index + 1}'))">Adicionar</span>
                     </button>
                 </div>
             </div>
