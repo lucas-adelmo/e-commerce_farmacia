@@ -1,6 +1,5 @@
 const shoppingCart = []
 
-
 function addProduct(id){
     const title = id.querySelector('#title').textContent
     const price = id.querySelector('#price').textContent.replace("Por","").trim()
