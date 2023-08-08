@@ -42,12 +42,24 @@ document.addEventListener("DOMContentLoaded", () =>{
         if (path[index].getAttribute('d') === newPath1) {
             // Mude para o novo caminho quando clicar
             path[index].setAttribute('d', newPath2);
-            addFavorite(document.getElementById(`card-bestSeller-${index}`))
+            // addFavorite(document.getElementById(`card-bestSeller-${index}`))
         } else {
             path[index].setAttribute('d', newPath1);
-            removeFavorite(document.getElementById(`card-bestSeller-${index}`))
+            // removeFavorite(document.getElementById(`card-bestSeller-${index}`))
         }
     }))
+
+    // svg.forEach((element, index) => element.addEventListener('click', () => {
+        
+    //     if (path[index].getAttribute('d') === newPath1) {
+    //         // Mude para o novo caminho quando clicar
+    //         path[index].setAttribute('d', newPath2);
+    //         addFavorite(document.getElementById(`card-priceDown-${index}`))
+    //     } else {
+    //         path[index].setAttribute('d', newPath1);
+    //         removeFavorite(document.getElementById(`card-priceDown-${index}`))
+    //     }
+    // }))
 
 
 });
