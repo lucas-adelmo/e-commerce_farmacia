@@ -15,6 +15,12 @@ section h4{
     margin-bottom: 5px;
 }
 
+#checkbox-icon {
+    width: 16px;
+    height: 16px;
+    fill: red;
+}
+
 .card-product{
     margin: 0 auto;
 }

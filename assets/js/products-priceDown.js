@@ -37,8 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = 'col-lg-3';
     
         card.innerHTML = `
-            <div class="card" id="card-priceDown-${index + 1}">
-                <div class="card-title"><img src="./assets/icons/heart.svg"></div>
+            <div class="card" id="card-priceDown-${index}">
+                <div class="card-title">
+                    
+                </div>
                 <img class="card-product" src="${product.imagePath}" alt="medicamento-generico" height="224">
                 <div class="card-body">
                     <p id="title">${product.title}</p>
@@ -55,11 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
         return card;
     };
     
-    const baixouPrecoSection = document.getElementById('baixou-preco');
+    const priceDownSection = document.getElementById('baixou-preco');
     
     productsPriceDown.forEach((product, index) => {
         const card = createPriceDown(product, index);
-        baixouPrecoSection.querySelector('.row').appendChild(card);
+        priceDownSection.querySelector('.row').appendChild(card);
     });
     
 
