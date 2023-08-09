@@ -21,6 +21,10 @@ section h4{
     fill: red;
 }
 
+#checkbox-icon:hover {
+    cursor:pointer;
+}
+
 .card-product{
     margin: 0 auto;
 }
