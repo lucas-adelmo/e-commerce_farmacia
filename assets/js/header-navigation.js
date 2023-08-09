@@ -1,5 +1,5 @@
 const headerInfo = {
-    logoSrc: "./assets/img/logo.png",
+    logoSrc: "./assets/img/logo-bg.png",
     logoAlt: "logo DEVinPharma",
     menuOptions: [
         {
@@ -29,7 +29,8 @@ function createAndAppendLogo() {
     logoElement.height = "77.31";
 
     // Append the logo element to the header
-    document.querySelector("#header-logo").appendChild(logoElement);
+    const logo = document.querySelectorAll("#header-logo")
+    logo.forEach((value) => value.appendChild(logoElement))
 }
 
 // Call the function when the DOM is fully loaded

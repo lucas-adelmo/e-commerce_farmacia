@@ -3,56 +3,56 @@ const products = [
         title: 'Medicamento A',
         originalPrice: 'R$ 49,99',
         discountedPrice: 'R$ 39,99',
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: false
     },
     {
         title: 'Medicamento B',
         originalPrice: 'R$ 49,99',
         discountedPrice: 'R$ 39,99',
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: false
     },
     {
         title: 'Medicamento C',
         originalPrice: 'R$ 49,99',
         discountedPrice: 'R$ 39,99',
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: false
     },
     {
         title: 'Medicamento D',
         originalPrice: 'R$ 49,99',
         discountedPrice: 'R$ 39,99',
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: false
     },
     {
         title: 'Medicamento W',
         originalPrice: 'R$ 49,99',
         discountedPrice: false,
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: true
     },
     {
         title: 'Medicamento X',
         originalPrice: 'R$ 49,99',
         discountedPrice: false,
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: true
     },
     {
         title: 'Medicamento Y',
         originalPrice: 'R$ 49,99',
         discountedPrice: false,
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: true
     },
     {
         title: 'Medicamento Z',
         originalPrice: 'R$ 49,99',
         discountedPrice: false,
-        imagePath: './assets/img/generico.png',
+        imagePath: './assets/img/generico-bg2.png',
         isBestSeller: true
     }
 ];

@@ -23,6 +23,8 @@ function removeFavorite(id){
     })
 
     favorites.splice(elementIndex,1)
+
+    alert(`O produto "${title}" foi retirado dos favoritos`)
     console.log(favorites)
 }
 

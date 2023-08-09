@@ -1,5 +1,5 @@
 header.container-fluid {
-    background-color: var(--primary) !important;
+    background-color: var(--primary);
     padding: 5px 0 5px 0;
 }
 
@@ -22,6 +22,7 @@ header.container-fluid {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: end;
     flex-direction: row;
     align-items: center;
 }
@@ -34,4 +35,8 @@ ul {
 .my-account li {
     list-style: none;
     padding: 10px;
+}
+
+#dark-mode-icon {
+    margin-left: 20%;
 }

@@ -9,6 +9,7 @@
         <script src="./assets/js/products.js"></script>
         <script src="./assets/js/shoppingCart.js"></script>
         <script src="./assets/js/favorites.js"></script>
+        <script src="./assets/js/darkMode.js"></script>
         
         <title>DEVinPharma</title>
         
@@ -18,17 +19,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     
-    <body>
+    <body class="body">
         
 
-        <section class="container-fluid">
-            <div class="row text-center g-0">
-                <a href="">Ganhe R$ 20 OFF* com o cupom TURMACLAMED</a>
+        <section class="container-fluid" >
+            <div class="row text-center g-0" >
+                <a id="cupomID" href="">Ganhe R$ 20 OFF* com o cupom TURMACLAMED</a>
             </div>
         </section>
         
         <header class="container-fluid px-5" id="header">
-            <div class="row">
+            <div class="row" id="header-dark">
                 <span class="col-xl-4" id="header-logo"></span>
                 <span class="col-xl-4">
                     <div class="input-group my-3">
@@ -40,8 +41,9 @@
                 </span>
                 <span class="col-xl-4">
                     <ul class="my-account">
-                        <li><img src="./assets/icons/person-fill.svg" alt="my account"></li>
-                        <li><img src="./assets/icons/basket-fill.svg" alt="shopping"></li>
+                        <li id="myaccount-icon"><img src="./assets/icons/person-fill.svg" alt="my account"></li>
+                        <li id="shopping-icon"><img src="./assets/icons/basket-fill.svg" alt="shopping"></li>
+                        <li id="dark-mode-icon"><img id="darkModeToggle" src="./assets/icons/sleep-mode.png" alt="dark-mode" width="32" height="32"></li>
                     </ul>
                 </span>
             </div>
@@ -55,11 +57,11 @@
                 <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>            <div class="carousel-inner">
-                <div class="carousel-item">
+                <div class="carousel-item active">
                     <img src="./assets/img/Lunis-Bem-Cuidar_PASTA_D-mobile.png" class="hideMobile" alt="...">
                     <img src="./assets/img/Lunis-Bem-Cuidar_PASTA_D.png" class="hideDesktop" alt="...">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <img src="./assets/img/BannerMobileDermaclub.png" class="hideMobile" alt="...">
                     <img src="./assets/img/Banner-Dermaclub.png" class="hideDesktop" alt="...">
                 </div>
