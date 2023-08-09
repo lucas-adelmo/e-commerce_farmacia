@@ -12,15 +12,23 @@ function darkMode (){
     const footer = document.querySelectorAll(".d-flex")
     const forms = document.querySelector(".forms")
     const formsButton = document.querySelector(".forms-button button")
+    const loginCard = document.querySelector(".login")
+    const loginButton = document.querySelector(".forms-button-login")
+
 
     if (forms != null){
         forms.classList.toggle("dark-forms")
         formsButton.classList.toggle("dark-button")
     }
 
+    if (loginCard != null) {
+        loginCard.classList.toggle("dark-card")
+    }
+
+    
     footer.forEach(footer =>footer.classList.toggle("dark-header"))
     
-    body.classList.toggle("dark-mode");
+    body.classList.toggle("dark-mode")
     section.forEach(section => section.classList.toggle("dark-mode"))
     
     header.forEach( header => header.classList.toggle("dark-header"))
@@ -40,8 +48,10 @@ function darkMode (){
     localStorage.setItem('darkMode', isDarkMode); // localStorage.setItem(key, value) 
 }
 
+
 const darkModeToggle = document.getElementById('darkModeToggle'); //get the icon which you click to toggle dark/light mode
 darkModeToggle.addEventListener('click', darkMode);
+
 
 // Check localStorage for dark mode setting
 const storedDarkMode = localStorage.getItem('darkMode');
