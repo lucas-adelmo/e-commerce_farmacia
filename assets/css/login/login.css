@@ -1,8 +1,9 @@
 .login{
-    max-width: 50%;
+    max-width: 60%;
+    width: auto;
     margin: auto;
     margin-top: 100px;
-    padding: 20px;
+    padding: 30px 30px 20px 30px;
     color:black;
     border-radius: 10px;
     box-shadow: 0px 0px 24px rgb(19, 37, 69, 0.25);
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0px;
+    
 }
 
 #exitIcon:hover{
@@ -33,14 +34,21 @@
 }
 
 .forms-button-login{
-    display: flex;
-    justify-content: space-between;
+    display: block;
     align-items: center;
 }
 
+.forms-button-login div{
+    display: flex;
+    justify-content: end;
+    height: 50px;
+}
+
 .forms-button-login button{
-    width:30%;
-    padding: 10px;   
+    max-width:80%;
+    width: auto;
+    margin: 0px;
+    padding: 10px 20px;   
     border-radius: 10px;
     color: white;
     border: none;
@@ -50,4 +58,8 @@
 #login-link{
     text-decoration: none;
     color: inherit;
+}
+
+#login-link:hover{
+    color: blue;
 }
