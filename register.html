@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="./assets/js/darkMode.js"></script>
+    <script src="assets/js/userData.js"></script>
+    <script src="./assets/js/register.js"></script>
     
     <title>Login</title>
 
+    <!-- <script src="./assets/js/auth.js"></script> -->
     <link rel="icon" type="image/x-icon" href="./assets/icons/icon-dark.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,9 +20,10 @@
 <body >
     <div class="login-body">
         <section class="container-xl g-0">
-            <div class="login-darkMode"><img id="darkModeToggle" src="./assets/icons/sleep-mode-2.png" alt="dark-mode" width="40" height="40" ></div>
+            <div class="login-darkMode"><img id="darkModeToggle" src="./assets/icons/sleep-mode-2.png" alt="dark-mode" width="40" height="40" title="modo escuro"></div>
             <div class="login">
-                <div class="login-head"><h2>Cadastre-se</h2><a href="index.html"><img src="./assets/icons/exit.png" alt="search" id="exitIcon" width="40px" height="40px"></a></div>
+                <div class="login-head"><h2>Cadastre-se</h2></div>
+                    <!-- <a href="index.html"><img src="./assets/icons/exit.png" alt="search" id="exitIcon" width="40px" height="40px"></a></div> -->
                 <forms class="forms-input">
                     <div class="mb-3">
                         <label for="name" class="form-label" >Nome:</label>
@@ -36,7 +40,7 @@
                 </forms>
                 <div class="forms-button-login">
                     <h5>Já se cadastrou? <a id="login-link" href="./login.html">Faça seu login.</a></h5>
-                    <div><button class="button" type="submit">Cadastrar</button></div>
+                    <div><button class="button" type="submit" onclick="register(document.querySelector('.forms-input'), users)">Cadastrar</button></div>
                 </div>
                 
             </div>

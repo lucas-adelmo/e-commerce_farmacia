@@ -12,7 +12,7 @@ const headerInfo = {
         },
         {
             content: "FALE CONOSCO",
-            href: "./contato.html"
+            href: "./contact.html"
         }
     ]
 };

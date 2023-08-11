@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- <script src="./assets/js/auth.js"></script> -->
     <script src="./assets/js/darkMode.js"></script>
+    <script src="assets/js/userData.js"></script>
+    <script src="assets/js/register.js"></script>
+    <script src="assets/js/login.js"></script>
     
     <title>Login</title>
 
@@ -17,10 +21,11 @@
 <body >
     <div class="login-body">
         <section class="container-xl g-0">
-            <div class="login-darkMode"><img id="darkModeToggle" src="./assets/icons/sleep-mode-2.png" alt="dark-mode" width="40" height="40" ></div>
+            <div class="login-darkMode"><img id="darkModeToggle" src="./assets/icons/sleep-mode-2.png" alt="dark-mode" width="40" height="40" title="modo escuro"></div>
             <div class="login">
-                <div class="login-head"><h2>Acesse a plataforma</h2><a href="index.html"><img src="./assets/icons/exit.png" alt="search" id="exitIcon" width="40px" height="40px"></a></div>
-                <forms class="forms-input">
+                <div class="login-head"><h2>Acesse a plataforma</h2></div>
+                    <!-- <a href="index.html"><img src="./assets/icons/exit.png" alt="search" id="exitIcon" width="40px" height="40px" title="pagina principal"></a></div> -->
+                <forms class="forms-input" >
                     <div class="mb-3">
                         <label for="login" class="form-label" >Email:</label>
                         <input type="email" class="form-control" id="login">
@@ -31,8 +36,8 @@
                     </div>
                 </forms>
                 <div class="forms-button-login">
-                    <h5>Não tem cadastro? <a id="login-link" href="./cadastro.html">Clique aqui.</a></h5>
-                    <div><button class="button" type="submit">Entrar</button></div>
+                    <h5>Não tem cadastro? <a id="login-link" href="./register.html">Clique aqui.</a></h5>
+                    <div><button class="button" onclick="checkLogin(document.querySelector('.forms-input'), users)" type="submit">Entrar</button></div>
                 </div>
                 
             </div>
